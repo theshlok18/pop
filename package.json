@@ -1,0 +1,47 @@
+{
+  "name": "vishu-love-message",
+  "version": "1.0.0",
+  "description": "A beautiful animated love message with heart tree and blooming flowers",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Building static site...' && npm run copy-files",
+    "copy-files": "echo 'Static files ready for deployment'",
+    "start": "python -m http.server 3000 || python3 -m http.server 3000 || npx serve .",
+    "dev": "npx serve . -p 3000",
+    "test": "echo 'Testing love message app...' && node -e \"console.log('❤️ Love app is ready!')\"",
+    "validate": "node -e \"const fs=require('fs'); if(!fs.existsSync('index.html')) throw new Error('Missing index.html'); console.log('✅ All files present');\""
+  },
+  "keywords": [
+    "love",
+    "animation", 
+    "canvas",
+    "heart",
+    "romantic",
+    "interactive",
+    "javascript",
+    "static-site"
+  ],
+  "author": {
+    "name": "Vishu",
+    "email": "vishu@example.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loadmatrixteam/vishu_miss_you.git"
+  },
+  "homepage": "https://vishu-love-message.onrender.com",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  },
+  "files": [
+    "index.html",
+    "file/",
+    "*.png",
+    "*.mp3"
+  ]
+}
